@@ -31,6 +31,10 @@ $(document).ready(function() {
 })
 
 
+
+
+
+
 // Nav Bar animation
 
 
@@ -51,6 +55,35 @@ $(window).on('scroll',function(){
    }
 
 });
+
+
+
+
+
+// Navbar responsiveness
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("headid");
+    if (x.className === "navigation") {
+        x.className += "responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+
+
+
+
+
+// Disable animations/transitions until the page has loaded.
+      $body.addClass('is-loading');
+
+      $window.on('load', function() {
+        window.setTimeout(function() {
+          $body.removeClass('is-loading');
+        }, 100);
+      });
 
 
 
