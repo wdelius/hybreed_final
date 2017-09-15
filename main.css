@@ -417,7 +417,7 @@
 
 
 	#solutions {
-		padding: 40px 60px 80px 60px;
+		padding: 20px 60px 80px 60px;
 		text-align: justify;
 		font-size: 120%;
 		color: #56554f;
@@ -561,6 +561,8 @@
 		margin:  0 auto;
 		padding-top: 15px;
 		text-align: center;
+		font-family: 'Lato', sans-serif;
+		color: black !important;
 	}
 
 
@@ -767,7 +769,7 @@ textarea:hover {
 
 
 	.contactus header {
-		color: #334656;
+		color: #56554f;
 		font-size: 60px;
 		margin: 0px auto 100px auto;
 		text-align: center !important;
