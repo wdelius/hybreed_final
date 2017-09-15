@@ -205,7 +205,7 @@
     	margin: auto auto;
     	font-size: 26px;
     	line-height: 30px;
-    	font-family: 'Lato';
+    	font-family: 'Architects Daughter', cursive;
     	font-weight: bolder;
     	text-transform: uppercase;
     	color: white;
@@ -762,6 +762,7 @@ textarea:hover {
 		margin-top: 150px;
 		margin-left: 200px;
 		margin-right: 200px;
+		border-top: dotter 2px;
 
 	}
 
