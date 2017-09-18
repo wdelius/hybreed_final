@@ -1,0 +1,38 @@
+div.gallery {
+	
+    margin: 15px;
+    padding: 15px;
+    border: 0px solid #ccc;
+    float: left;
+    width: 180px;
+
+}
+
+div.gallery:hover {
+	border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+}
+
+div.desc {
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gall {
+	width: 100%;
+	border-radius: 8px;
+	background: #e5e5e5;
+	display: inline-block;
+
+
+}
+
+
