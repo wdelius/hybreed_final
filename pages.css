@@ -228,6 +228,10 @@
 	.flex-container2 , .flex-container1 {
 		padding: 10px;
 		flex-wrap: wrap;
+		display: -webkit-flex; /* Safari */
+	    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+	    display: flex;   
+	    flex-wrap: wrap;
 
 
 	}
@@ -235,6 +239,10 @@
 	.flex-box1 , .flex-box2 {
 		flex: 1;
 		flex-wrap: wrap;
+		display: -webkit-flex; /* Safari */
+	    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+	    display: flex;   
+	    flex-wrap: wrap;
 
 	}
 
