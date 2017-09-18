@@ -6,15 +6,12 @@
 		margin: 0px;
 		padding: 0px;
 		font-family: 'Lato', sans-serif;	
-		border: .0000001px none transparent;
-  		/* border: 2px dotted !important; */
 
 		
 } 
 
 	.remove-decoration {
 		text-decoration: none !important;
-		color: #334656;
 		border-bottom: none !important;
 	}
 
@@ -29,12 +26,10 @@
 	}
 
 	body {
-		line-height: 1;
 		margin: 0;
 		padding: 0;
 		border: 0;
-		background-color: #5b6a77; 
-		color: #334656;
+		background-color: white;	
 		}
 
 
@@ -46,73 +41,66 @@
 
 
 
-	#header .nav {
+	#header  {
 		height: 60px;
 		line-height: 20px;
-		padding: 5px;
-		padding-right: 15px;
-		padding-top: 20px;
 		position: fixed;
 		width: 100%;
 		z-index: 1000;
+		overflow: hidden;
+		transition: ase-in-out 2s !important;
+		-webkit-transition: ease-in-out 1s !important;
 	}	
 
 	#header  nav {
 		font-size: 110%;
-		text-align: right;
-		margin-top: 10px;
+		font-weight: bolder;
+		float: right;
 		padding-top: 20px;
-		padding-bottom: 10px;
 		text-transform: uppercase;
-
-	} 
-
-	.nav {
 		transition: ease 1s !important;
 		-webkit-transition: ease-in-out 1s !important;
+		-moz-transition: ease-in-out 1s !important;
+	}
+
+	
+
+	#header nav a {
+		margin-left: 13px !important;
+		margin-right: 13px !important;
+		transition: 0.5s ease-in-out;
+		-webkit-transition: 0.5s ease-in-out;
+		-moz-transition: 0.5s ease-in-out;
+		-ms-transition: 0.5s ease-in-out;		
 	}
 
 	#header nav a:hover {
 		color: white;
-		text-decoration: none;		
+		text-decoration: none;
+		transition: 0.5s ease-in-out;
+		-webkit-transition: 0.5s ease-in-out;
+		-moz-transition: 0.5s ease-in-out;
+		-ms-transition: 0.5s ease-in-out;		
+
+	}
+
+	#header nav a {
+		transition: ease 0.3s !important;
+		-webkit-transition: ease-in-out 0.3s !important;
+		-moz-transition: ease-in-out 0.3s !important; 
+
+	}
+
+	#header nav a:active {
+		color: black !important;
+		transition: ease 0.1s !important;
+		-webkit-transition: ease-in-out 0.3s !important;
+		-moz-transition: ease-in-out 0.3s !important;
 
 	}
 
 
-	/* Responsive nav / Media Queries */
-
-					/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-
-				@media screen and (max-width: 600px) {
-				  .navigation a:not(:first-child) {display: none;}
-				  .navigation a.icon {
-				    float: right;
-				    display: block;
-				  }
-				}
-
-				/* The "responsive" class is added to the navigation with JavaScript when the user clicks on the icon. This class makes the navigation look good on small screens (display the links vertically instead of horizontally) */
-
-				@media screen and (max-width: 600px) {
-				  .navigation.responsive {position: relative;}
-				  .navigation.responsive a.icon {
-				    position: absolute;
-				    right: 0;
-				    top: 0;
-				  }
-				  .navigation.responsive a {
-				    float: none;
-				    display: block;
-				    text-align: left;
-				  }
-				}
-
-
-					.icon {
-				    	display: none;
-					}
-
-
+	
 
 /* More header */
 
@@ -127,6 +115,7 @@
 	#contac {
 		padding: 6px;
 		border: solid 1.2px #337ab7 !important;
+		text-decoration: none !important;
 		border-radius: 7%;
 		color: #337ab7;
 
@@ -136,9 +125,14 @@
 		border: solid 1.2px white !important;
 	}
 
+
+
+
+/* Background Image */
+
 	.banner {
 		height: 650px;
-		background-image: url("images/beach-1a.jpg") ; 
+		background-image: url("images/beach-1b.jpg") ; 
 		background-size: auto, cover;
 		background-position: center, center;
 
@@ -153,14 +147,14 @@
 			}
 
 
-	div nav a {
-		margin-left: 15px;
-		margin-right: 15px;
 
-	}
+	
 
 
 	/* Scroll Nav */
+
+					
+
 
 					.nav.past-main {
 				    	background-color: #163A5D !important;
@@ -173,8 +167,15 @@
 				    	color: white !important;
 				    	padding-top: 15px !important;
 				    	text-decoration: none !important;
-				    	transition: ease 1s !important;
+				    	transition: ease 0.8s !important;
 				    	-webkit-transition: ease-in-out 0.8s !important;
+					}
+
+					.navigation.past-main nav {
+					}
+
+					.navigation.past-main a {
+						
 					}
 
 
@@ -183,39 +184,42 @@
 
 
 
+/* LOGO */
+
 	.logo {
 		width: 40%;
-		padding-top: 15px;
-		padding-left: 35px;
+		padding-top: 20px;
+		padding-left: 25px;
+
 
 	}
 
 	#landing {
 		height: 280px;
 		margin: auto;
-		width: 80%;
-		padding: 180px 5px 0px 5px;
+		width: 70%;
+		padding: 110px 5px 300px 5px;
 
 
 	}
 
 	#landing h1 {
-		word-spacing: 8.8px;
-		letter-spacing: 1.5px;
+		word-spacing: 10.8px;
+		letter-spacing: 2.5px;
 		text-align: center;
     	margin: auto auto;
-    	font-size: 26px;
-    	line-height: 30px;
-    	font-family: 'Architects Daughter', cursive;
-    	font-weight: bolder;
-    	text-transform: uppercase;
+    	font-size: 40px;
+    	line-height: 50px;
+    	font-family: 'Varela Round', sans-serif;
+    	font-weight: normal;
     	color: white;
 
     }
 
     #button-banner {
-    	height: 200px;
+    	height: 60px;
     	margin: auto;
+    	margin-top: 30px;
     	width: 60%;
     	text-align: center;
 
@@ -224,10 +228,10 @@
 
 
     #btn {
-    	height: 70px;
+    	height: 50px;
     	background:  transparent;
      	line-height:  40px;
-     	border:  1.5px solid #334656;
+     	border:  1.5px solid #3375C3;
 		display:  inline-block;
 		float:  none;
 		text-align:  center;
@@ -235,15 +239,27 @@
 		padding:  0px !important;
 		font-size:  24px;
 		border-radius: 3.5%;
-		color: #334656;
-		font-family: 'Architects Daughter', cursive;
+		color: #3375C3;
+		font-family: 'Varela Round', cursive;
+		transition: 0.8s ease-in-out;
+		-webkit-transition: 0.8s ease-in-out;
+		-moz-transition: 0.8s ease-in-out;
+		-ms-transition: 0.8s ease-in-out;
+
 
     }
 
     #btn:hover {
     	color: black;
     	border: 1.5px solid black;
+    	transition: 0.8s ease-in-out;
+		-webkit-transition: 0.8s ease-in-out;
+		-moz-transition: 0.8s ease-in-out;
+		-ms-transition: 0.8s ease-in-out;
     }
+
+
+
 
 
 
@@ -254,68 +270,75 @@
     /* ABOUT PAGE */
 
 	#about {
-		padding: 60px 60px 40px 60px;
+		background-color: #efefef !important;
+		padding: 60px 60px 80px 60px;
 		background-color: white;
 		text-align: justify;
 		font-size: 120%;
 		color: #56554f;
-		margin-bottom: 60px;
-
-	}
-
-	img.floatright {
-		float: right;
-		border-radius: 3%;
-		margin-left: 40px;
-		margin-bottom: 35px;
-		
-	}
-
-	img.floatleft {
-		float: left;
-		border-radius: 3%;
-		margin-top: 20px;
-		margin-right: 40px;
-		margin-bottom: 20px;
 
 	}
 
 	#about h1 {
-		font-size: 60px;
+		font-size: 30px;
 		padding-top: 20px;
 		margin-bottom: 70px;
 		text-align: center;
-		font-family: 'Architects Daughter', cursive;
+		font-family: 'Varela Round', sans-serif;
 	}
 
 	#about p {
 		line-height: 40px;
-		margin: 0 100px 0 100px;
-
-	}
-
-	#strong {
-		font-weight: bolder;
-		font-size: 30px;
-	}
-
-	#oyst {
-		margin: 50px auto 30px auto;
-		width: 50%;
+		margin: 0 auto;
+		width: 40%;
 		text-align: center;
-		margin-bottom: 50px;
+
+	}
+
+
+	.vector {
+		
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
 		padding-top: 20px;
+	}
+
+	.vector img {
+		margin: 0 auto !important;
+		text-align: center;
 	}
 
 	.oystline {
 		display: inline;
 		width: 20px;
 		height: 5px;
-		margin: 0px 25px 0px 25px;
+		margin: 0 auto !important;
+		text-align: center;
+		
 	
 	}
 
+	.mainpageoyst {
+		padding-bottom: 50px !important;
+		border: 2px solid;
+		
+	}
+
+	.oyst-inner{ 
+		margin: 0 auto;
+		width: 60%;
+		border: 2px solid;
+
+	}
+
+	.home-vector {
+		margin: 0 !important;
+	}
+
 	#otsrer-vect {
+		margin: 0;
+
 		
 	}
 
@@ -326,7 +349,7 @@
 /* Team */
 
 	#team {
-		background-color: #fcfcfc;
+		background-color: #e2e2e2;
 		text-align: center;
 		padding-top: 50px;
 	}
@@ -335,7 +358,7 @@
 		font-size: 65px;
 		margin: 0px auto 100px auto;
 		text-align: center !important;
-		font-family: 'Architects Daughter', cursive;		
+		font-family: 'Varela Round', cursive;		
 		z-index: 1;
 	}
 
@@ -429,7 +452,7 @@
 		font-size: 60px;
 		margin: 0px auto 100px auto;
 		text-align: center !important;
-		font-family: 'Architects Daughter', cursive;		
+		font-family: 'Varela Round', cursive;		
 		z-index: 1;
 	}
 
@@ -444,33 +467,56 @@
 
 
 
-/* Photo Row */
+/* Photo Row 
 
 	.photorow {
 		background-color: white !important;
-		display: block;
+		display: flex;
 		border-radius: 0;
-		margin: 0;
-		width: 100%
-		
-		
+		margin-bottom: 50px;	
+				
+	} */
+
+	.flex-container {
+		display: flex;
+		margin-bottom: 80px;
+		justify-content: center;
+
 	}
+
+	.flex-container div {
+		fl
+	}
+
+	.flex-item1{
+
+
+	}
+
+	.flex-item2 {
+
+	}
+
+	.flex-item3 {
+
+	}
+
 
 	img.col-md-4 {
 		margin: 0 !important;
 		padding: 0 !important;
 		border-radius: 0;
 		z-index: 90;
-		width: 33%;
-		opacity: 0.5;
+		width: 100%;
+		opacity: 1;
 		
 
+	} 
 
-	}
 
 
 	img.col-md-4:hover {
-		opacity: 1;
+		opacity: 0.5;
 		transition: all 0.7s ease-in-out 0s;
 	    -webkit-transition: all 0.3s ease-in-out 0s;
 	}
@@ -497,7 +543,7 @@
 		font-size: 60px;
 		margin: 0px auto 40px auto;
 		text-align: center !important;
-		font-family: 'Architects Daughter', cursive;		
+		font-family: 'Varela Round', cursive;		
 		z-index: 1;
 	}	
 
@@ -579,9 +625,15 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Permanent Marker', cursive;
-font-family: 'Architects Daughter', cursive;
-font-family: 'Sedgwick Ave', cursive; */
+font-family: 'Varela Round', cursive;
+font-family: 'Sedgwick Ave', cursive; 
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Varela Round', sans-serif;   */ 
 
+
+
+/* form */
 
 
 /* form */
@@ -663,30 +715,20 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
-body {
-  font-family: 'Lato', sans-serif;
-  background: white;
-  color: #b3aca7;
-}
 
-header {
-  position: relative;
-  margin: 100px 0 25px 0;
-  font-size: 60px;
-  text-align: center;
-  letter-spacing: 3px;
-}
+
 
 #form {
-  position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto;
+  width: 350px;
+  margin: 50px auto;
+  text-align: center;
+  
 }
 
 input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 470px;
+  width: 300px;
   height: 50px;
   padding: 0px 15px 0px 15px;
   
@@ -709,7 +751,7 @@ input:hover {
 }
 
 textarea {
-  width: 470px;
+  width: 300px;
   max-width: 470px;
   height: 110px;
   max-height: 110px;
@@ -736,7 +778,7 @@ textarea:hover {
 }
 
 #submit {
-  width: 470px;
+  width: 300px;
   
   padding: 0;
   margin: -5px 0px 0px 0px;
@@ -753,6 +795,7 @@ textarea:hover {
 }
 
 #submit:hover {
+
   color: #e2dedb;
 }
 
@@ -760,20 +803,206 @@ textarea:hover {
 	/* Contact Us Form */
 
 	.contactus {
-		margin-top: 150px;
-		margin-left: 200px;
-		margin-right: 200px;
-		border-top: dotter 2px;
+		margin-top: 50px;
+		
 
 	}
 
 
 	.contactus header {
 		color: #56554f;
-		font-size: 60px;
-		margin: 0px auto 100px auto;
+		font-size: 45px;
+		margin: 0px auto;
 		text-align: center !important;
-		font-family: 'Architects Daughter', cursive;		
+		font-family: 'Varela Round', cursive;		
 		z-index: 1;
 
 	}
+
+
+
+/* Responsive nav / Media Queries */
+			
+
+				@media screen and (max-width: 1200px) {
+
+						  #header nav a {
+								margin-left: 3px;
+								margin-right: 3px;
+								word-spacing: 1px;
+							}
+
+
+				
+				@media screen and (max-width: 1000px) {
+				  
+				 
+				 .logo {
+				 	padding-top: 20px;
+				 }
+
+				 .logo img {
+					max-width: 90%;
+
+					}
+
+				  #header nav a {
+						margin-left: 6px;
+						margin-right: 6px;
+					}
+				
+				}
+
+
+	@media screen and (max-width: 800px) {
+				  
+
+				  
+
+				  #landing {
+				  	width: 100%;
+
+				  }
+
+				  #landing h1 {
+				  	margin-top: 140px;
+				  	font-size: 35px !important;
+				  }
+
+				  .contactus header {
+				  	font-size: 35px;
+				  }
+
+
+
+
+				  /* MENU */
+
+				  /* Header */
+
+
+
+				#header  {
+					height: 300px;
+					line-height: 20px;
+					position: absolute;
+					width: 100%;
+					float: right !important;
+					z-index: 1000;
+					overflow: hidden;
+					
+					margin-bottom: 100px;
+				}	
+
+				
+
+				
+
+				#header nav a {
+					display: inline-block;
+					width: 100%;
+					float: right;
+					text-align: right;
+					
+					margin: 10px 12px 10px 0px;
+					transition: 0.5s ease-in-out;
+					-webkit-transition: 0.5s ease-in-out;
+					-moz-transition: 0.5s ease-in-out;
+					-ms-transition: 0.5s ease-in-out;		
+				}
+
+				#header nav a:hover {
+					color: white;
+					text-decoration: none;
+					transition: 0.5s ease-in-out;
+					-webkit-transition: 0.5s ease-in-out;
+					-moz-transition: 0.5s ease-in-out;
+					-ms-transition: 0.5s ease-in-out;		
+
+				}
+
+				#header nav a {
+					transition: ease 0.3s !important;
+					-webkit-transition: ease-in-out 0.3s !important;
+					-moz-transition: ease-in-out 0.3s !important; 
+
+				}
+
+				#header nav a:active {
+					color: black !important;
+					transition: ease 0.1s !important;
+					-webkit-transition: ease-in-out 0.3s !important;
+					-moz-transition: ease-in-out 0.3s !important;
+
+				}
+
+
+				
+
+			/* More header */
+
+
+				.active {
+					text-decoration: 0 !important;
+				}
+
+
+
+
+				#contac {
+					padding: 6px;
+					color: #337ab7;
+					border: none!important;
+
+
+				}
+
+				#contac:hover {
+					border: none!important;
+				}
+
+				#about p {
+					width: 80%;
+				
+
+				}
+
+
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+	@media screen and (max-width: 500px) {
+				#landing h1 {
+				  	font-size: 20px !important;
+				  	letter-spacing: 1px;
+				  	word-spacing: 1px;
+				  }
+
+
+	}
+				
+
+				
+
+
+					
+
+
+
+
+	
