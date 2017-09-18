@@ -1,14 +1,14 @@
 
 
 // fade in
-
+/* 
 $(document).ready(function(){
-    $('nav').fadeIn(2000);
+    $('.vector').fadeIn(2000);
 }); 
 
 
 
-
+*/
 
 
 

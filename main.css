@@ -131,8 +131,8 @@
 /* Background Image */
 
 	.banner {
-		height: 650px;
-		background-image: url("images/beach-1b.jpg") ; 
+		height: 720px;
+		background-image: url("images/beach-1c.jpg") ; 
 		background-size: auto, cover;
 		background-position: center, center;
 
@@ -198,14 +198,14 @@
 		height: 280px;
 		margin: auto;
 		width: 70%;
-		padding: 110px 5px 300px 5px;
+		padding: 80px 5px 300px 5px;
 
 
 	}
 
 	#landing h1 {
-		word-spacing: 10.8px;
-		letter-spacing: 2.5px;
+		word-spacing: 7.8px;
+		letter-spacing: 1.5px;
 		text-align: center;
     	margin: auto auto;
     	font-size: 40px;
