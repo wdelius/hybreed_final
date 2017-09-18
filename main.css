@@ -56,7 +56,7 @@
 		font-size: 110%;
 		font-weight: bolder;
 		float: right;
-		padding-top: 0px;
+		padding-top: 20px;
 		text-transform: uppercase;
 		transition: ease 1s !important;
 		-webkit-transition: ease-in-out 1s !important;
@@ -187,7 +187,7 @@
 /* LOGO */
 
 	.logo {
-		width: 70%;
+		width: 80%;
 		padding-top: 20px;
 		padding-left: 25px;
 
@@ -842,7 +842,7 @@ textarea:hover {
 				 }
 
 				 .logo img {
-					max-width: 90%;
+					max-width: 95%;
 
 					}
 
@@ -893,6 +893,10 @@ textarea:hover {
 					
 					margin-bottom: 100px;
 				}	
+
+				#header nav {
+					padding-top: none;
+				}
 
 				
 
@@ -986,7 +990,7 @@ textarea:hover {
 
 
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 640px) {
 				#landing h1 {
 				  	font-size: 32px !important;
 				  	letter-spacing: 1px;

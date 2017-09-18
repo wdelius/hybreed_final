@@ -121,7 +121,7 @@
 /* Logo top left*/
 
 .logo {
-	width: 30%;
+	max-width: 50%;
 		z-index: 996;
 		margin: 40px 10px 10px 25px;
 		padding: 30px;
@@ -154,6 +154,9 @@
 		padding-top: 100px;
 		border-top: 3px dashed #ccc;
 	}
+
+
+
 
 
 
@@ -265,8 +268,10 @@
 	}
 
 
-	.waterpic img {
-
+	p img {
+		border-radius: 5px;
+		margin-top: -10px;
+		margin-bottom: 10px;
 	}
 /*
 	.flex-box3 {
@@ -323,7 +328,7 @@
 
 	div h3 {
 		font-family: 'Varela Round', sans-serif;
-		font-size: 35px;
+		font-size: 30px;
 		background-color: #3375C3;
 		border-radius: 5px 20px;
 		width: 100%;
@@ -735,6 +740,15 @@ textarea:hover {
 		font-size: 20px;
 	}
 
+		.logo {
+				 	padding-top: 20px;
+				 }
+
+		.logo img {
+					max-width: 120%;
+
+
+
 
 }
 
@@ -757,6 +771,9 @@ textarea:hover {
 				}	
 
 				#header nav{
+					width: 100%;
+					margin-bottom: 200px;
+					display: block;
 				}
 
 				
@@ -827,7 +844,6 @@ textarea:hover {
 
 					.vector img {
 						max-width: 30%;
-						padding-top: 10px;
 					}
 
 					.vector {
@@ -835,13 +851,11 @@ textarea:hover {
 
 					}
 
+					.vectors img {
+						padding-top: 200px;
+					}
 
 
-
-
-
-
-}
 
 
 
