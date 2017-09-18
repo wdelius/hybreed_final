@@ -201,6 +201,10 @@
 		display: flex;
 		margin: 0 30px;
 		flex-wrap: wrap;
+		display: -webkit-flex; /* Safari */
+    	-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    	display: flex;   
+    	flex-wrap: wrap;
 	}
 
 	.flex-container1 {
@@ -866,6 +870,29 @@ textarea:hover {
 				} 
 
 }
+
+
+@media screen and (max-width: 800px) {
+
+				.flex-box11 , { 
+					flex: 1;
+
+
+					} .flex-box12 { 
+						flex: 2;
+
+					} , .flex-box13{
+						flex: 3;
+						margin: 5px 30px 100px 30px;
+		
+
+	}
+
+
+
+
+
+	}
 
 
 
