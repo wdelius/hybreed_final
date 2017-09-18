@@ -24,6 +24,10 @@
 		list-style-type: none;
 	}
 
+	nav {
+		display: none;
+	}
+
 
 	#header .nav {		
 		/* position: fixed; */
@@ -145,13 +149,14 @@
 
 
  .vector {
-		
-		width: 100%;
 		text-align: center;
 		margin: 0px 10px 30px 10px;
 		padding-top: 100px;
 		border-top: 3px dashed #ccc;
 	}
+
+
+
 
 	.vector img {
 		margin: 0 auto !important;
@@ -438,6 +443,12 @@
 		}
 
 
+		#contact {
+				border-top: 3px dashed #ccc !important;
+			}
+
+
+
 
 
 
@@ -721,7 +732,6 @@ textarea:hover {
 @media screen and (max-width: 1000px) {
 
 	div h3 {
-
 		font-size: 20px;
 	}
 
@@ -797,6 +807,13 @@ textarea:hover {
 					font-size: 38px;
 				}
 
+				.contactus {
+						margin-top: -10px;
+				
+
+	}
+
+
 				.contactus header {
 					font-size: 30px;
 				}
@@ -817,6 +834,8 @@ textarea:hover {
 						border-top: none; 
 
 					}
+
+
 
 
 

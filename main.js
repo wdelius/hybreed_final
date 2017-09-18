@@ -1,5 +1,12 @@
 
 
+// fade in
+
+$(document).ready(function(){
+    $('nav').fadeIn(2000);
+}); 
+
+
 
 
 
