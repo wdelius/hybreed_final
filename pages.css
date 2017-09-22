@@ -786,6 +786,10 @@ textarea:hover {
 					display: block;
 				}
 
+				p img {
+					width: 80%;
+				}
+
 				
 
 				
@@ -902,6 +906,12 @@ textarea:hover {
 
 	}
 
+
+@media screen and (max-width: 640px) {
+			
+
+
+}
 
 
 

@@ -1,32 +1,67 @@
-<?php include('form_process.php'); ?>
-<link rel="stylesheet" href="form.css" type="text/css">
-<div class="container">  
-  <form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-    <h3>Contact</h3>
-    <h4>Contact us today, and get reply with in 24 hours!</h4>
-    <fieldset>
-      <input placeholder="Your name" type="text" name="name" value="<?= $name ?>" tabindex="1" autofocus>
-      <span class="error"><?= $name_error ?></span>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="text" name="email" value="<?= $email ?>" tabindex="2">
-      <span class="error"><?= $email_error ?></span>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number" type="text" name="phone" value="<?= $phone ?>" tabindex="3">
-      <span class="error"><?= $phone_error ?></span>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Web Site starts with http://" type="text" name="url" value="<?= $url ?>" tabindex="4" >
-      <span class="error"><?= $url_error ?></span>
-    </fieldset>
-    <fieldset>
-      <textarea value="<?= $message ?>" name="message" tabindex="5">
-      </textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-    <div class="success"><?= $success ?></div>
-  </form>
-</div>
+HTML:
+
+<form method="post" name="contact_form"
+action="contact-form-handler.php">
+    Your Name:
+    <input type="text" name="name">
+    Email Address:
+    <input type="text" name="email">
+    Message:
+    <textarea name="message"></textarea>
+    <input type="submit" value="Submit">
+</form>
+
+<form method="post" name="contact_form" id="form" ction="contact-form-handler.php" class="topBefore" id="contact">
+  <input id="name" name="name" type="text" placeholder="NAME">
+  <input id="email" name="email" type="text" placeholder="E-MAIL">
+  <textarea id="message" name="message" type="text" placeholder="MESSAGE"></textarea>
+   <input id="submit" type="submit" value="GO!">
+
+
+
+JS:
+
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script>
+
+
+PHP:
+
+<?php
+$errors = '';
+$myemail = 'yourname@website.com';//<-----Put Your email address here.
+if(empty($_POST['name'])  ||
+   empty($_POST['email']) ||
+   empty($_POST['message']))
+{
+    $errors .= "\n Error: all fields are required";
+}
+$name = $_POST['name'];
+$email_address = $_POST['email'];
+$message = $_POST['message'];
+if (!preg_match(
+"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
+$email_address))
+{
+    $errors .= "\n Error: Invalid email address";
+}
+
+if( empty($errors))
+{
+$to = $myemail;
+$email_subject = "Contact form submission: $name";
+$email_body = "You have received a new message. ".
+" Here are the details:\n Name: $name \n ".
+"Email: $email_address\n Message \n $message";
+$headers = "From: $myemail\n";
+$headers .= "Reply-To: $email_address";
+mail($to,$email_subject,$email_body,$headers);
+//redirect to the 'thank you' page
+header('Location: contact-form-thank-you.html');
+}
+?>

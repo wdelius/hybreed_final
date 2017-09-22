@@ -21,6 +21,16 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="imagesfavicon-16x16.png" sizes="16x16" />
 
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106769510-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106769510-1');
+    </script>
+
     <script src="https://use.fontawesome.com/2bcd3befc5.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -42,10 +52,10 @@
       <div id="header">
         <nav class="navigation nav " id="headid">
                 <a href="index.html" class="jezz">Home</a>
-                <a href="team.html" class="jezz" >Team</a>
                 <a href="about.html" class="jezz">About</a>
+                <a href="team.html" class="jezz" >Team</a>
                 <a href="solutions.html" class="jezz">Solutions</a>
-                <a href="relationships.html" class="jezz">Relationships</a>
+                <a href="relationships.html" class="jezz"> Strategic Relationships</a>
                 <a href="#contact" class="jes" id="contac">Contact</a>                
         </nav>
       </div>
@@ -139,12 +149,11 @@
 
     <div class="contactus">
         <header>Get in Touch With Us</header>
-          <form id="form" class="topBefore" id="contact">
+          <form action="MAILTO:deliusdev@gmail.com" method="post" id="form" class="topBefore" id="contact">
             <input id="name" type="text" placeholder="NAME">
             <input id="email" type="text" placeholder="E-MAIL">
             <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
              <input id="submit" type="submit" value="GO!">
-        
           </form>
     </div>
 

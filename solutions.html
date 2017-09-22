@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Pacific Hybreed --> Solutions</title>
+    <title>Pacific Hybreed --> Strategic Relationships</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,16 @@
 
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="imagesfavicon-16x16.png" sizes="16x16" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106769510-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106769510-1');
+    </script>
+
 
     <script src="https://use.fontawesome.com/2bcd3befc5.js"></script>
 
@@ -48,12 +58,11 @@
               </div>
               <nav class="navigation nav" id="headid">
                       <a href="index.html" class="jezz">Home</a>
-                      <a href="team.html" class="jezz" >Team</a>
                       <a href="about.html" class="jezz">About</a>
-                      <a href="solutions.html" class="jezz"> Solutions</a>
-                      <a href="relationships.html" class="jezz"> Relationships</a>
-                      <a href="#contact" class="jes" id="contac">Contact</a>
-                             
+                      <a href="team.html" class="jezz" >Team</a>
+                      <a href="solutions.html" class="jezz">Solutions</a>
+                      <a href="relationships.html" class="jezz"> Strategic Relationships</a>
+                      <a href="#contact" class="jes" id="contac">Contact</a>   
               </nav>
 
               </div>
@@ -102,13 +111,13 @@
         <img src="images/vect5.png" id="oyster-vect" alt="oyster">
     </div>
         <header>Get in Touch With Us</header>
-          <form id="form" class="topBefore" id="contact">
-            <input id="name" type="text" placeholder="NAME">
-            <input id="email" type="text" placeholder="E-MAIL">
-            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-             <input id="submit" type="submit" value="GO!">
-        
-          </form>
+
+         <form method="post" action="contact-form-handler.php" name="contact_form" id="form" class="topBefore" id="contact">
+             <input id="name" name="name" type="text" placeholder="NAME">
+             <input id="email" name="email" type="text" placeholder="E-MAIL">
+             <textarea id="message" name="message" type="text" placeholder="MESSAGE"></textarea>
+              <input id="submit" type="submit" value="GO!">
+      </form>
     </div>
 
 
@@ -136,8 +145,17 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="main.js"></script>
-
-
+    <script src="gen_validatorv31.js" type="text/javascript"></script>
+    <script language="JavaScript">
+    // Code for validating the form
+    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+    // for details
+    var frmvalidator  = new Validator("contactform");
+    frmvalidator.addValidation("name","req","Please provide your name"); 
+    frmvalidator.addValidation("email","req","Please provide your email"); 
+    frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+    </script>
+  
 
   </body>
 </html>
